@@ -1,0 +1,9 @@
+<h1>Create new type</h1>
+<%= form_for @type do |f| %>
+<p><%= f.label :Name %>
+<%= f.text_field :name %>
+<p><%= f.label :Description %>
+<%= f.text_field :desc %>
+
+<%= f.submit %>
+<% end %>
