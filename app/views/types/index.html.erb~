@@ -1,6 +1,10 @@
 <h1>List of types</h1>
-<ul>
+
 <% @types.each do |f| %>
-   <li><%= link_to f.name, f %></li>
-<% end %>
+<ul>
+   <li><%= link_to f.name %></li>
 </ul>
+
+<% end %>
+<p><%= will_paginate @types %>
+
